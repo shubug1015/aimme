@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap');
+@font-face {
+  font-family: 'font-name';
+  src: url('/fonts/helvetica neue.ttf');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .flex-center-center {
+    @apply flex justify-center items-center;
+  }
+  .flex-start-center {
+    @apply flex justify-start items-center;
+  }
+  .flex-end-center {
+    @apply flex justify-end items-center;
+  }
+  .flex-between-center {
+    @apply flex justify-between items-center;
+  }
+  .flex-around-center {
+    @apply flex justify-around items-center;
+  }
+  .flex-center-start {
+    @apply flex justify-center items-start;
+  }
+  .flex-center-end {
+    @apply flex justify-center items-end;
+  }
+  .flex-between-end {
+    @apply flex justify-between items-end;
+  }
+  .flex-start-end {
+    @apply flex justify-start items-end;
+  }
+
+  .col-center-center {
+    @apply flex flex-col justify-center items-center;
+  }
+  .col-start-center {
+    @apply flex flex-col justify-center items-start;
+  }
+  .col-end-center {
+    @apply flex flex-col justify-center items-end;
+  }
+  .col-center-start {
+    @apply flex flex-col justify-start items-center;
+  }
+  .col-end-center {
+    @apply flex flex-col justify-end items-center;
+  }
+  .col-between-center {
+    @apply flex flex-col justify-between items-center;
+  }
+
+  .doughnut {
+    @apply relative rounded-full bg-beige-400;
+  }
+
+  .center {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center rounded-full bg-navy-400;
+  }
+
+  .pie {
+    @apply relative rounded-full w-[19rem] h-[19rem];
+  }
+}
+
+html,
+body {
+  padding: 0;
+  padding-top: 47px;
+  margin: 0;
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #333333;
+  /* width: 100vw;
+  max-width: 100%; */
+  overflow-x: hidden;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    padding-top: 16px;
+  }
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.slick-arrow::before {
+  display: none !important;
+}
